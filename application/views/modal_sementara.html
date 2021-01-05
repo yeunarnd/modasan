@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Top Menu Style - Ace Admin</title>
+
+    <meta name="description" content="top menu &amp; navigation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="../../assets/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../assets/assets/css/font-awesome.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- page specific plugin styles -->
+
+    <!-- text fonts -->
+    <link rel="stylesheet" href="../../assets/assets/css/ace-fonts.css" />
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="../../assets/assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+    <!--[if lte IE 9]>
+			<link rel="stylesheet" href="../../assets/assets/css/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+    <!--[if lte IE 9]>
+		  <link rel="stylesheet" href="../../assets/assets/css/ace-ie.css" />
+		<![endif]-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/test/css/editor.dataTables.min.css" />
+  
+    <!-- inline styles related to this page -->
+    <style>
+        dt {
+            margin-top: 1em;
+        }
+
+        dt:first-child {
+            margin-top: 0;
+        }
+
+        dd {
+            width: 25%
+        }
+
+        *[data-editor-field] {
+            border: 1px dashed #ccc;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+
+        *[data-editor-field]:hover {
+            background: #f3f3f3;
+            border: 1px dashed #333;
+        }
+    </style>
+
+    <!-- ace settings handler -->
+    <script src="../../assets/assets/js/ace-extra.js"></script>
+
+    <script type="text/javascript" language="javascript"  src="../../assets/test/js/dataTables.editor.min.js"></script>
+    <script type="text/javascript" language="javascript"  src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript"  src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script class="init">
+	
+
+
+var editor; // use a global for the submit and return data rendering in the examples
+
+$(document).ready(function() {
+	editor = new $.fn.dataTable.Editor( {
+		ajax: "standalone.php",
+		fields:  {
+				label: "Server IP address:",
+				name:  "server-ip"
+			}
+		
+	} );
+
+	$('[data-editor-field]').on( 'click', function (e) {
+		editor.inline( this, {
+			buttons: '_basic'
+		} );
+	} );
+} );
+
+
+
+	</script>
+</head>
+
+<body class="no-skin">
+
+
+
+
+
+
+
+
+
+
+
+
+    <dl>
+        <dt>Server IP:</dt>
+        <dd data-editor-field="server-ip">153.63.213.41</dd>
+
+    </dl>
+
+
+
+
+</body>
+
+</html>

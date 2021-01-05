@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<title>Halaman Barang</title>
+
+	<meta name="description" content="top menu &amp; navigation" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="../../assets/assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="../../assets/assets/css/font-awesome.css" />
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- page specific plugin styles -->
+
+	<!-- text fonts -->
+	<link rel="stylesheet" href="../../assets/assets/css/ace-fonts.css" />
+
+	<!-- ace styles -->
+	<link rel="stylesheet" href="../../assets/assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+	<!--[if lte IE 9]>
+			<link rel="stylesheet" href="../../assets/assets/css/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+	<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="../../assets/assets/css/ace-ie.css" />
+		<![endif]-->
+
+	<!-- inline styles related to this page -->
+
+	<!-- ace settings handler -->
+	<script src="../../assets/assets/js/ace-extra.js"></script>
+
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+	<!--[if lte IE 8]>
+		<script src="../../assets/assets/js/html5shiv.js"></script>
+		<script src="../../assets/assets/js/respond.js"></script>
+		<![endif]-->
+</head>
+
+<body class="no-skin">
+	<!-- #section:basics/navbar.layout -->
+	<div id="navbar" class="navbar navbar-default    navbar-collapse       h-navbar">
+		<script type="text/javascript">
+			try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+		</script>
+
+		<div class="navbar-container" id="navbar-container">
+			<div class="navbar-header pull-left">
+				<!-- #section:basics/navbar.layout.brand -->
+				<a href="#" class="navbar-brand">
+					<small>
+						<i class="fa fa-leaf"></i>
+						LOGO
+					</small>
+				</a>
+				<button class="pull-right navbar-toggle navbar-toggle-img collapsed" type="button"
+					data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu">
+					<span class="sr-only">Toggle user menu</span>
+
+					<img src="../../assets/assets/avatars/user.jpg" alt="Jason's Photo" />
+				</button>
+
+				<button class="pull-right navbar-toggle collapsed" type="button" data-toggle="collapse"
+					data-target="#sidebar">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+
+			<!-- #section:basics/navbar.dropdown -->
+			<div class="navbar-buttons navbar-header pull-right  collapse navbar-collapse" role="navigation">
+				<ul class="nav ace-nav">
+					<!-- #section:basics/navbar.user_menu -->
+					<li class="light-blue user-min">
+						<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+							<img class="nav-user-photo" src="../../assets/assets/avatars/user.jpg"
+								alt="Jason's Photo" />
+							<span class="user-info">
+								<small>Welcome,</small>
+								Jason
+							</span>
+
+							<i class="ace-icon fa fa-caret-down"></i>
+						</a>
+
+						<ul
+							class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+							<li>
+								<a href="#">
+									<i class="ace-icon fa fa-cog"></i>
+									Settings
+								</a>
+							</li>
+
+							<li>
+								<a href="profile.html">
+									<i class="ace-icon fa fa-user"></i>
+									Profile
+								</a>
+							</li>
+
+							<li class="divider"></li>
+
+							<li>
+								<a href="#">
+									<i class="ace-icon fa fa-power-off"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- /section:basics/navbar.user_menu -->
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- /section:basics/navbar.layout -->
+	<div class="main-container" id="main-container">
+		<script type="text/javascript">
+			try { ace.settings.check('main-container', 'fixed') } catch (e) { }
+		</script>
+
+		<!-- #section:basics/sidebar.horizontal -->
+		<div id="sidebar" class="sidebar      h-sidebar                navbar-collapse collapse">
+			<script type="text/javascript">
+				try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
+			</script>
+
+
+			<ul class="nav nav-list">
+				<li class=" hover">
+					<a href="home.html">
+						<i class="menu-icon fa fa-home"></i>
+						<span class="menu-text"> Home </span>
+					</a>
+				</li>
+
+				<li class=" active hover">
+					<a href="hal_barang.html">
+						<i class="menu-icon fa fa-inbox"></i>
+						<span class="menu-text"> Barang </span>
+					</a>
+				</li>
+
+				<li class="hover">
+					<a href="hal_pelanggan.html">
+						<i class="menu-icon fa fa-users"></i>
+						<span class="menu-text">
+							Pelanggan
+						</span>
+					</a>
+				</li>
+
+				<li class="hover">
+					<a href="hal_sales.html">
+						<i class="menu-icon fa fa-user"></i>
+						<span class="menu-text">
+							Sales
+						</span>
+					</a>
+				</li>
+
+				<li class="hover">
+					<a href="hal_penjualan.html">
+						<i class=" menu-icon fa fa-bar-chart"></i>
+						<span class="menu-text">
+							Penjualan
+						</span>
+					</a>
+				</li>
+
+				<li class="hover">
+					<a href="hal_pembelian.html">
+						<i class="menu-icon fa fa-pie-chart"></i>
+						<span class="menu-text">
+							Pembelian
+						</span>
+					</a>
+				</li>
+				<li class="hover">
+					<a href="laporan_penjualan.html">
+						<i class="menu-icon fa fa-cart-plus"></i>
+						<span class="menu-text">
+							Lap. Jual
+						</span>
+					</a>
+				</li>
+				<li class="hover">
+					<a href="laporan_pembelian.html">
+						<i class="menu-icon fa fa-cart-arrow-down"></i>
+						<span class="menu-text">
+							Lap. Beli
+						</span>
+					</a>
+				</li>
+				<li class="hover">
+					<a href="pengaturan.html">
+						<i class="menu-icon fa fa-cog"></i>
+						<span class="menu-text">
+							Pengaturan
+						</span>
+					</a>
+				</li>
+
+			</ul><!-- /.nav-list -->
+
+			<!-- #section:basics/sidebar.layout.minimize -->
+
+			<!-- /section:basics/sidebar.layout.minimize -->
+			<script type="text/javascript">
+				try { ace.settings.check('sidebar', 'collapsed') } catch (e) { }
+			</script>
+		</div>
+
+		<!-- /section:basics/sidebar.horizontal -->
+		<div class="main-content">
+			<div class="main-content-inner">
+				<div class="page-content">
+
+					<!-- /section:settings.box -->
+					<div class="page-header">
+
+
+						<div class="row">
+							<div class="col-md-1">
+								<h2 style="color: #07A1C8;">
+									Barang
+								</h2>
+							</div>
+							<form action="" method=""></form>
+							<div class="col-md-2">
+								<label>Jenis</label>
+								<select class="form-control" required name="metode">
+									<option value="">Pilih </option>
+									<option name="Indomaret">Indomaret</option>
+									<option name="Alfamart">Alfamart</option>
+								</select>
+							</div>
+							<div class="col-md-2">
+								<label>Kelompok</label>
+								<select class="form-control" required name="metode">
+									<option value="">Pilih </option>
+									<option name="Indomaret">Indomaret</option>
+									<option name="Alfamart">Alfamart</option>
+								</select>
+							</div>
+							<div class="col-md-2">
+								<label>Lokasi</label>
+								<select class="form-control" required name="metode">
+									<option value="">Pilih </option>
+									<option name="Indomaret">Indomaret</option>
+									<option name="Alfamart">Alfamart</option>
+								</select>
+							</div>
+							<div class="col-md-2">
+								<label>Sales</label>
+								<select class="form-control" required name="metode">
+									<option value="">Pilih </option>
+									<option name="Indomaret">Indomaret</option>
+									<option name="Alfamart">Alfamart</option>
+								</select>
+							</div>
+							<div class="col-md-2">
+								<label>Status</label>
+								<select class="form-control" required name="metode">
+									<option value="">Pilih </option>
+									<option name="Indomaret">Indomaret</option>
+									<option name="Alfamart">Alfamart</option>
+								</select>
+							</div>
+							<div class="col-md-1">
+								<br>
+								<button type="button" class="btn btn-primary">Refresh</button>
+							</div>
+							</form>
+						</div>
+
+					</div><!-- /.page-header -->
+
+					<div class="row">
+						<div class="col-xs-12">
+							<!-- PAGE CONTENT BEGINS -->
+
+
+
+							<div class="center">
+								<div class="table-responsive">
+									<table class="table table-bordered ">
+										<thead>
+											<tr>
+												<th scope="col">No</th>
+												<th scope="col">Kode</th>
+												<th scope="col">Nama</th>
+												<th scope="col">Kelompok</th>
+												<th scope="col">Lokasi</th>
+												<th scope="col">Berag Gram</th>
+												<th scope="col">Kadar %</th>
+												<th scope="col">Harga Beli</th>
+												<th scope="col">Sales</th>
+												<th scope="col">Status</th>
+												<th scope="col">Tanggal</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">1</th>
+												<td>192819</td>
+												<td>Honda</td>
+												<td>satu</td>
+												<td>Malang</td>
+												<td>192 Gram</td>
+												<td>92%</td>
+												<td>10.000</td>
+												<td>hos</td>
+												<td>Baik</td>
+												<td>10-10-2020</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+
+								<div class="row">
+									<div class="col-md-1" style="margin-top: 5px;">
+										<a href="" data-toggle="modal" data-target="#tambah"
+											class="btn btn-primary">Tambah</a>
+									</div>
+									<div class="col-md-1" style="margin-top: 5px;">
+										<a href="" data-toggle="modal" data-target="#edit"
+											class="btn btn-success">Edit</a>
+									</div>
+									<div class="col-md-1" style="margin-top: 5px;">
+										<a href="" class="btn btn-danger">Hapus</a>
+									</div>
+									<div class="col-md-2" style="margin-top: 5px;">
+										<form action="">
+											<input type="text" class="form-control" placeholder="Cari">
+										</form>
+
+									</div>
+
+								</div>
+							</div>
+
+							<!-- modal tambah -->
+
+							<div class="modal fade" id="tambah" tabindex="-1" aria-labelledby="exampleModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog ">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="row">
+												<div class="col-md-8">
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Tanggal</label>
+														<div class="col-sm-7">
+															<input type="date" class="form-control">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Kode</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Kode">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Nama</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Nama">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Kelompok</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="kelompok">
+														</div>
+														<button class="btn btn-primary btn-sm" style="margin-top: 5px;" data-toggle="modal"
+															data-target="#kelompok">
+															<i class="fa fa-search-plus"></i>
+														</button>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Lokasi</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Lokasi">
+														</div>
+														<button class="btn btn-primary btn-sm" style="margin-top: 5px;" data-toggle="modal"
+														data-target="#lokasi">
+														<i class="fa fa-search-plus"></i>
+													</button>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Sales</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Sales">
+														</div>
+														<button class="btn btn-primary btn-sm" style="margin-top: 5px;" data-toggle="modal"
+															data-target="#sales">
+															<i class="fa fa-search-plus"></i>
+														</button>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Ongkos</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Ongkos">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Berat</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Berat">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Kadar</label>
+														<div class="col-sm-7">
+															<select class="form-control" required name="metode">
+																<option value="">Pilih </option>
+																<option name="Indomaret">Indomaret</option>
+																<option name="Alfamart">Alfamart</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Harga Beli</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control"placeholder="Harga Beli">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Harga Jual</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control"placeholder="Harga Jual">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Foto</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Foto">
+														</div>
+
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Status</label>
+														<div class="col-sm-7">
+															<select class="form-control" required name="metode">
+																<option value="">Pilih </option>
+																<option name="Indomaret">Indomaret</option>
+																<option name="Alfamart">Alfamart</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4 center">
+													<div style="margin-top: 140%;">
+														<div style="margin-bottom: 10px;">
+															<img src="../../assets/assets/img/php.png" alt="Foto"
+															width="150"><br>
+														</div>
+														<button type="button" class="btn btn-primary">Cam</button>
+													</div>
+												</div>
+												</form>
+											</div>
+										</div>
+
+										<!-- modal kelompok -->
+
+										<div class="modal fade" id="kelompok" tabindex="-1"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title center" id="exampleModalLabel">Kelompok
+														</h5>
+													</div>
+													<div class="modal-body">
+														<br><br><br>
+														<div class="row">
+															<div class="col-md-7">
+																<div class="form-group">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-plus"></i></button>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-minus"></i></button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- modal lokasi -->
+
+										<div class="modal fade" id="lokasi" tabindex="-1"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title center" id="exampleModalLabel">Lokasi
+														</h5>
+													</div>
+													<div class="modal-body">
+														<br><br><br>
+														<div class="row">
+															<div class="col-md-7">
+																<div class="form-group">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+															<div class="col-md-2">
+																<button class="btn btn-primary btn-sm" style="margin-top: 5px;"><i
+																		class="fa fa-plus"></i></button>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-minus"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- sales -->
+
+										<div class="modal fade" id="sales" tabindex="-1"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title center" id="exampleModalLabel">Sales</h5>
+													</div>
+													<div class="modal-body">
+														<br><br><br>
+														<div class="row">
+															<div class="col-md-7">
+																<div class="form-group">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+															<div class="col-md-2">
+																<button class="btn btn-primary btn-sm" style="margin-top: 5px;"><i
+																		class="fa fa-plus"></i></button>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-minus"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="modal-footer">
+											<div class="row">
+												<div class="col-md-4" style="margin-top: 5px;">
+													<button type="button" class="btn btn-primary">Simpan</button>
+												</div>
+												<div class="col-md-3" style="margin-top: 5px;">
+													<button type="button" class="btn btn-success">Cetak Barcode</button>
+												</div>
+												<div class="col-md-1" style="margin-top: 5px;">
+													<button type="button" class="btn btn-danger"
+														data-dismiss="modal">Keluar</button>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Modal Edit -->
+
+							<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog ">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="row">
+												<div class="col-md-8">
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Tanggal</label>
+														<div class="col-sm-7">
+															<input type="date" class="form-control">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Kode</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Kode">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Nama</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Nama">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Kelompok</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="kelompok">
+														</div>
+														<button class="btn btn-primary btn-sm" style="margin-top: 5px;" data-toggle="modal"
+															data-target="#editkelompok">
+															<i class="fa fa-search-plus"></i>
+														</button>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Lokasi</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Lokasi">
+														</div>
+														<button class="btn btn-primary btn-sm" style="margin-top: 5px;" data-toggle="modal"
+														data-target="#editlokasi">
+														<i class="fa fa-search-plus"></i>
+													</button>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Sales</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Sales">
+														</div>
+														<button class="btn btn-primary btn-sm" style="margin-top: 5px;" data-toggle="modal"
+															data-target="#editsales">
+															<i class="fa fa-search-plus"></i>
+														</button>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Ongkos</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Ongkos">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Berat</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Berat">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Kadar</label>
+														<div class="col-sm-7">
+															<select class="form-control" required name="metode">
+																<option value="">Pilih </option>
+																<option name="Indomaret">Indomaret</option>
+																<option name="Alfamart">Alfamart</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Harga Beli</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control"placeholder="Harga Beli">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Harga Jual</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control"placeholder="Harga Jual">
+														</div>
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Foto</label>
+														<div class="col-sm-7">
+															<input type="text" class="form-control" placeholder="Foto">
+														</div>
+
+													</div>
+													<div class="form-group row">
+														<label for="" class="col-sm-3 col-form-label">Status</label>
+														<div class="col-sm-7">
+															<select class="form-control" required name="metode">
+																<option value="">Pilih </option>
+																<option name="Indomaret">Indomaret</option>
+																<option name="Alfamart">Alfamart</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4 center">
+													<div style="margin-top: 140%;">
+														<div style="margin-bottom: 10px;">
+															<img src="../../assets/assets/img/php.png" alt="Foto"
+																width="150"><br>
+														</div>
+														<button type="button" class="btn btn-primary">Cam</button>
+													</div>
+												</div>
+												</form>
+											</div>
+										</div>
+
+										<!-- modal kelompok -->
+
+										<div class="modal fade" id="editkelompok" tabindex="-1"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title center" id="exampleModalLabel">Kelompok
+														</h5>
+													</div>
+													<div class="modal-body">
+														<br><br><br>
+														<div class="row">
+															<div class="col-md-7">
+																<div class="form-group">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-plus"></i></button>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-minus"></i></button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- modal lokasi -->
+
+										<div class="modal fade" id="editlokasi" tabindex="-1"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title center" id="exampleModalLabel">Lokasi
+														</h5>
+													</div>
+													<div class="modal-body">
+														<br><br><br>
+														<div class="row">
+															<div class="col-md-7">
+																<div class="form-group">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-plus"></i></button>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-minus"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- sales -->
+
+										<div class="modal fade" id="editsales" tabindex="-1"
+											aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title center" id="exampleModalLabel">Sales</h5>
+													</div>
+													<div class="modal-body">
+														<br><br><br>
+														<div class="row">
+															<div class="col-md-7">
+																<div class="form-group">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-plus"></i></button>
+															</div>
+															<div class="col-md-2" style="margin-top: 5px;">
+																<button class="btn btn-primary btn-sm"><i
+																		class="fa fa-minus"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="modal-footer">
+											<div class="row" style="position: center;">
+												<div class="col-md-4" style="margin-top: 5px;">
+													<button type="button" class="btn btn-primary">Simpan</button>
+												</div>
+												<div class="col-md-3" style="margin-top: 5px;">
+													<button type="button" class="btn btn-success">Cetak Barcode</button>
+												</div>
+												<div class="col-md-1" style="margin-top: 5px;">
+													<button type="button" class="btn btn-danger"
+														data-dismiss="modal">Keluar</button>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- PAGE CONTENT ENDS -->
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.page-content -->
+			</div>
+		</div><!-- /.main-content -->
+
+		<div class="footer">
+			<div class="footer-inner">
+				<!-- #section:basics/footer -->
+				<div class="footer-content">
+					<span class="bigger-120">
+						<span class="blue bolder">Ace</span>
+						Application &copy; 2013-2014
+					</span>
+
+					&nbsp; &nbsp;
+					<span class="action-buttons">
+						<a href="#">
+							<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+						</a>
+
+						<a href="#">
+							<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+						</a>
+
+						<a href="#">
+							<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+						</a>
+					</span>
+				</div>
+
+				<!-- /section:basics/footer -->
+			</div>
+		</div>
+
+		<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+			<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+		</a>
+	</div><!-- /.main-container -->
+
+	<!-- basic scripts -->
+
+	<!--[if !IE]> -->
+	<script type="text/javascript">
+		window.jQuery || document.write("<script src='../../assets/assets/js/jquery.js'>" + "<" + "/script>");
+	</script>
+
+	<!-- <![endif]-->
+
+	<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='../../assets/assets/js/jquery1x.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+	<script type="text/javascript">
+		if ('ontouchstart' in document.documentElement) document.write("<script src='../../assets/assets/js/jquery.mobile.custom.js'>" + "<" + "/script>");
+	</script>
+	<script src="../../assets/assets/js/bootstrap.js"></script>
+
+	<!-- page specific plugin scripts -->
+
+	<!-- ace scripts -->
+	<script src="../../assets/assets/js/ace/elements.scroller.js"></script>
+	<script src="../../assets/assets/js/ace/elements.colorpicker.js"></script>
+	<script src="../../assets/assets/js/ace/elements.fileinput.js"></script>
+	<script src="../../assets/assets/js/ace/elements.typeahead.js"></script>
+	<script src="../../assets/assets/js/ace/elements.wysiwyg.js"></script>
+	<script src="../../assets/assets/js/ace/elements.spinner.js"></script>
+	<script src="../../assets/assets/js/ace/elements.treeview.js"></script>
+	<script src="../../assets/assets/js/ace/elements.wizard.js"></script>
+	<script src="../../assets/assets/js/ace/elements.aside.js"></script>
+	<script src="../../assets/assets/js/ace/ace.js"></script>
+	<script src="../../assets/assets/js/ace/ace.ajax-content.js"></script>
+	<script src="../../assets/assets/js/ace/ace.touch-drag.js"></script>
+	<script src="../../assets/assets/js/ace/ace.sidebar.js"></script>
+	<script src="../../assets/assets/js/ace/ace.sidebar-scroll-1.js"></script>
+	<script src="../../assets/assets/js/ace/ace.submenu-hover.js"></script>
+	<script src="../../assets/assets/js/ace/ace.widget-box.js"></script>
+	<script src="../../assets/assets/js/ace/ace.settings.js"></script>
+	<script src="../../assets/assets/js/ace/ace.settings-rtl.js"></script>
+	<script src="../../assets/assets/js/ace/ace.settings-skin.js"></script>
+	<script src="../../assets/assets/js/ace/ace.widget-on-reload.js"></script>
+	<script src="../../assets/assets/js/ace/ace.searchbox-autocomplete.js"></script>
+
+	<!-- inline scripts related to this page -->
+	<script type="text/javascript">
+		jQuery(function ($) {
+			var $sidebar = $('.sidebar').eq(0);
+			if (!$sidebar.hasClass('h-sidebar')) return;
+
+			$(document).on('settings.ace.top_menu', function (ev, event_name, fixed) {
+				if (event_name !== 'sidebar_fixed') return;
+
+				var sidebar = $sidebar.get(0);
+				var $window = $(window);
+
+				//return if sidebar is not fixed or in mobile view mode
+				var sidebar_vars = $sidebar.ace_sidebar('vars');
+				if (!fixed || (sidebar_vars['mobile_view'] || sidebar_vars['collapsible'])) {
+					$sidebar.removeClass('lower-highlight');
+					//restore original, default marginTop
+					sidebar.style.marginTop = '';
+
+					$window.off('scroll.ace.top_menu')
+					return;
+				}
+
+
+				var done = false;
+				$window.on('scroll.ace.top_menu', function (e) {
+
+					var scroll = $window.scrollTop();
+					scroll = parseInt(scroll / 4);//move the menu up 1px for every 4px of document scrolling
+					if (scroll > 17) scroll = 17;
+
+
+					if (scroll > 16) {
+						if (!done) {
+							$sidebar.addClass('lower-highlight');
+							done = true;
+						}
+					}
+					else {
+						if (done) {
+							$sidebar.removeClass('lower-highlight');
+							done = false;
+						}
+					}
+
+					sidebar.style['marginTop'] = (17 - scroll) + 'px';
+				}).triggerHandler('scroll.ace.top_menu');
+
+			}).triggerHandler('settings.ace.top_menu', ['sidebar_fixed', $sidebar.hasClass('sidebar-fixed')]);
+
+			$(window).on('resize.ace.top_menu', function () {
+				$(document).triggerHandler('settings.ace.top_menu', ['sidebar_fixed', $sidebar.hasClass('sidebar-fixed')]);
+			});
+
+
+		});
+	</script>
+
+	<!-- the following scripts are used in demo only for onpage help and you don't need them -->
+	<link rel="stylesheet" href="../../assets/assets/css/ace.onpage-help.css" />
+	<link rel="stylesheet" href="../../assets/docs/assets/js/themes/sunburst.css" />
+
+	<script type="text/javascript"> ace.vars['base'] = '..'; </script>
+	<script src="../../assets/assets/js/ace/elements.onpage-help.js"></script>
+	<script src="../../assets/assets/js/ace/ace.onpage-help.js"></script>
+	<script src="../../assets/docs/assets/js/rainbow.js"></script>
+	<script src="../../assets/docs/assets/js/language/generic.js"></script>
+	<script src="../../assets/docs/assets/js/language/html.js"></script>
+	<script src="../../assets/docs/assets/js/language/css.js"></script>
+	<script src="../../assets/docs/assets/js/language/javascript.js"></script>
+</body>
+
+</html>
