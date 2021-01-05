@@ -1,0 +1,3 @@
+[23-Nov-2020 07:19:41 UTC] PHP Fatal error:  Cannot redeclare C_barang::filter() in /home/k4991560/modasangold.com/application/controllers/C_barang.php on line 594
+[23-Nov-2020 07:19:47 UTC] PHP Fatal error:  Cannot redeclare C_barang::filter() in /home/k4991560/modasangold.com/application/controllers/C_barang.php on line 594
+[23-Nov-2020 07:54:17 UTC] PHP Fatal error:  Cannot redeclare C_barang::filter() in /home/k4991560/modasangold.com/application/controllers/C_barang.php on line 594
