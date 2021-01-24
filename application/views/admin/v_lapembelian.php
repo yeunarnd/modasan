@@ -1,6 +1,6 @@
 <?php $this->load->view('partials/header.php') ?>
 <?php
-$koneksi =  mysqli_connect("localhost", "k4991560_modasan", "UNCaLG6GEcfq", "k4991560_db_modasan");
+$koneksi =  mysqli_connect("localhost", "root", "", "modasan");
 ?>
 <!-- #section:basics/navbar.layout -->
 <div id="navbar" class="navbar navbar-default    navbar-collapse       h-navbar">
