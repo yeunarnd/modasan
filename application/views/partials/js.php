@@ -71,6 +71,7 @@
 <script src="<?php echo base_url() ?>assets/assets/js/ace/ace.widget-on-reload.js"></script>
 <script src="<?php echo base_url() ?>assets/assets/js/ace/ace.searchbox-autocomplete.js"></script>
 
+
 <!-- inline scripts related to this page -->
 <script type="text/javascript">
     jQuery(function($) {

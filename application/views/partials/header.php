@@ -49,6 +49,8 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script src="js/highcharts.js"></script>
 
+  <script src="<?php echo base_url() ?>assets/assets/js/chart/dist/Chart.min.js"></script>
+
 
   <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 

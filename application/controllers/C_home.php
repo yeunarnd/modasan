@@ -40,6 +40,7 @@ class C_home extends CI_Controller
         $this->load->view('admin/home', $data);
     }
 
+    
     public function comingsoon()
     {
         $this->load->view('admin/v_comingsoon');
