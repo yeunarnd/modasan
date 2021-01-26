@@ -287,7 +287,7 @@ var  myDoughnutChart = new Chart(ctx, {
                         jQuery(function() {
                             new Highcharts.Chart({
                                 chart: {
-                                    renderTo: 'chart',
+                                    renderTo: 'pie',
                                     type: 'line',
                                 },
                                 title: {
