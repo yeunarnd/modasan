@@ -10,6 +10,7 @@ class C_home extends CI_Controller
         $this->load->helper('url');
         $this->load->helper('form');
         $this->load->model('M_menu', '', TRUE);
+        $this->load->model('M_pelanggan', '', TRUE);
         $this->load->database();
     }
 
